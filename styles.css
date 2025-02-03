@@ -70,6 +70,7 @@ a {
   outline-offset: 2px;
   font-weight: bolder;
   text-decoration: underline;
+  color: unset;
 }
 input {
   outline-offset: 2px;
@@ -432,7 +433,7 @@ main.article {
   padding-left: 0;
   padding-right: 0;
   width: fit-content;
-  color: blue;
+  color: var(--txt_l);
   background: none;
   cursor: pointer;
   font-weight: bolder;
@@ -445,6 +446,7 @@ main.article {
 }
 #style-state:checked ~ #all-view>main a {
   text-decoration: none;
+  color: var(--txt_l);
 }
 #style-state:checked ~ #all-view>main a:hover {
   background-color: unset;
