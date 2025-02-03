@@ -1,40 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sound Compression</title>
-    <link rel="stylesheet" href="/colors.css">
-    <link rel="stylesheet" href="/styles.css">
-</head>
-<body>
-    <header>
-        <h1>Sound Compression</h1>
-    </header>
-
-    <section id="intro">
-        <h2>What is Sound Compression?</h2>
-        <p>Sound compression refers to the process of reducing the size of an audio file while maintaining acceptable quality. Compression techniques are used to minimize storage requirements, making audio files easier to transmit and store. There are two types of sound compression: lossless and lossy.</p>
-    </section>
-
-    <section id="lossless">
-        <h2>Lossless Compression</h2>
-        <p>Lossless compression methods preserve the original sound quality. No data is lost during the compression process, meaning that the audio can be restored to its original form. Popular formats for lossless audio compression include FLAC (Free Lossless Audio Codec) and ALAC (Apple Lossless Audio Codec).</p>
-    </section>
-
-    <section id="lossy">
-        <h2>Lossy Compression</h2>
-        <p>Lossy compression methods sacrifice some audio quality to achieve higher compression ratios. This results in smaller file sizes, but the audio quality is somewhat degraded. Common lossy audio formats include MP3 (MPEG-1 Audio Layer 3) and AAC (Advanced Audio Coding).</p>
-    </section>
-
-    <section id="applications">
-        <h2>Applications of Sound Compression</h2>
-        <p>Sound compression is widely used in various fields, such as music streaming services (Spotify, Apple Music), video sharing platforms (YouTube), and digital radio broadcasting. It allows for efficient transmission and storage of high-quality audio files over the internet.</p>
-    </section>
-
-    <section id="conclusion">
-        <h2>Conclusion</h2>
-        <p>Sound compression plays a crucial role in digital media by allowing us to store and transmit audio efficiently. While lossy compression sacrifices some quality for reduced file size, lossless compression ensures the integrity of the original sound, offering flexibility for different use cases.</p>
-    </section>
-</body>
+    <title>About Linux</title>
+    <link rel="stylesheet" href="../../colors.css">
+    <link rel="stylesheet" href="../../styles.css">
+  </head>
+  <body class="no-js">
+    <!-- style and theme linkers -->        
+    <input type="checkbox" id="font-state" class="state-linker">
+    <input type="checkbox" id="theme-state" class="state-linker">
+    <input type="checkbox" id="style-state" class="state-linker">
+    <div id="all-view" class="article-view">
+      <header class="fixed">
+        <h1 class="title no-select">ABEL WEB</h1>
+        <div class="head-menu left no-select">
+          <a class="link entry" href="../../index.html">⌂</a>
+        </div>
+        <div class="head-menu right no-select">
+          <label for="font-state" id="font-btn" class="link entry" title="bigger font">🗚</label>
+          <label for="theme-state" id="theme-btn" class="link entry" title="toggle dark/light theme">☯</label>
+          <label for="style-state" id="style-btn" class="link entry" title="toggle style">✎</label>
+        </div>
+      </header>
+      <!-- contents -->
+      <main class="article">
+        <h1 class="section-title">Sound Compression: Reducing Audio File Sizes</h1>
+        <div class="section-item">
+          <div class="preview green">
+            <img src="../waves.jpeg">
+          </div>
+          <div class="description">
+            <p class="author">Abel Ianovici</p>
+            <h2>Sound Compression: Reducing Audio File Sizes</h2>
+            <p class="desc">Sound compression techniques help reduce the size of audio files while maintaining a balance between quality and file size. This research covers both lossless and lossy compression methods.</p>
+            <p><strong>Category:</strong> Audio Processing, Compression Techniques</p>
+            <div class="link-section">
+              <a class="link" href="./sound-comp.pdf" download="soundCmpr.pdf">Download Pdf</a>
+              <a class="link" href="./sound-comp.tex" download="soundCmpr.tex">Download LaTeX</a>
+            </div>
+          </div>
+        </div>
+        <section id="intro">
+          <h2>What is Sound Compression?</h2>
+          <p>Sound compression refers to the process of reducing the size of an audio file while maintaining acceptable quality. Compression techniques are used to minimize storage requirements, making audio files easier to transmit and store. There are two types of sound compression: lossless and lossy.</p>
+        </section>
+        <section id="lossless">
+          <h2>Lossless Compression</h2>
+          <p>Lossless compression methods preserve the original sound quality. No data is lost during the compression process, meaning that the audio can be restored to its original form. Popular formats for lossless audio compression include FLAC (Free Lossless Audio Codec) and ALAC (Apple Lossless Audio Codec).</p>
+        </section>
+        <section id="lossy">
+          <h2>Lossy Compression</h2>
+          <p>Lossy compression methods sacrifice some audio quality to achieve higher compression ratios. This results in smaller file sizes, but the audio quality is somewhat degraded. Common lossy audio formats include MP3 (MPEG-1 Audio Layer 3) and AAC (Advanced Audio Coding).</p>
+        </section>
+        <section id="applications">
+          <h2>Applications of Sound Compression</h2>
+          <p>Sound compression is widely used in various fields, such as music streaming services (Spotify, Apple Music), video sharing platforms (YouTube), and digital radio broadcasting. It allows for efficient transmission and storage of high-quality audio files over the internet.</p>
+        </section>
+        <section id="conclusion">
+          <h2>Conclusion</h2>
+          <p>Sound compression plays a crucial role in digital media by allowing us to store and transmit audio efficiently. While lossy compression sacrifices some quality for reduced file size, lossless compression ensures the integrity of the original sound, offering flexibility for different use cases.</p>
+        </section>
+      </main>
+    </div>
+  </body>
+  <script>
+  document.body.classList.remove('no-js'); // Removes fallback styling 
+  document.querySelectorAll('label[for]').forEach(label => {
+    label.setAttribute("tabindex", "0");
+    label.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        const input = document.getElementById(label.getAttribute('for'));
+        input.checked = !input.checked; // Toggle input state
+        // Or trigger click: input.click();
+        toggleEntriesFocusability();
+      }
+    });
+  });
+  function toggleEntriesFocusability() {
+    const hideState = document.getElementById('hide-state').checked;
+    const entries = document.querySelectorAll('#main-menu .entry');
+    entries.forEach(entry => {
+      if (hideState) {
+        // Make entry not focusable when hideState is true
+        entry.setAttribute('tabindex', '-1');
+      } else {
+        // Restore focusability when hideState is false
+        entry.setAttribute('tabindex', '0');
+      }
+    });
+  }
+  </script>
 </html>

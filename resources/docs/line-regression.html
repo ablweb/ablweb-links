@@ -1,45 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linear Regression</title>
-    <link rel="stylesheet" href="/colors.css">
-    <link rel="stylesheet" href="/styles.css">
-</head>
-<body>
-    <header>
-        <h1>Linear Regression</h1>
-    </header>
-
-    <section id="intro">
-        <h2>What is Linear Regression?</h2>
-        <p>Linear regression is a statistical method used to model the relationship between a dependent variable and one or more independent variables by fitting a linear equation to observed data. It is one of the simplest and most widely used regression techniques.</p>
-    </section>
-
-    <section id="simple-linear">
-        <h2>Simple Linear Regression</h2>
-        <p>Simple linear regression involves one independent variable and one dependent variable. The goal is to find the best-fit line that predicts the dependent variable from the independent variable. The equation for simple linear regression is: <code>y = mx + b</code>, where <code>m</code> is the slope and <code>b</code> is the y-intercept.</p>
-    </section>
-
-    <section id="multiple-linear">
-        <h2>Multiple Linear Regression</h2>
-        <p>Multiple linear regression extends simple linear regression by using more than one independent variable to predict the dependent variable. The equation for multiple linear regression is: <code>y = m1x1 + m2x2 + ... + mnxn + b</code>, where <code>m1, m2, ..., mn</code> are the coefficients for each independent variable, and <code>x1, x2, ..., xn</code> are the independent variables.</p>
-    </section>
-
-    <section id="applications">
-        <h2>Applications of Linear Regression</h2>
-        <p>Linear regression is used in various fields, such as economics, finance, biology, and engineering. It helps researchers and analysts understand relationships between variables, predict outcomes, and identify trends. Examples include predicting housing prices, stock market trends, and medical conditions based on factors like age, income, or temperature.</p>
-    </section>
-
-    <section id="limitations">
-        <h2>Limitations of Linear Regression</h2>
-        <p>While linear regression is simple and widely applicable, it has limitations. It assumes a linear relationship between the variables, which may not always hold true in real-world data. Additionally, it is sensitive to outliers, which can distort the results and reduce the model's accuracy.</p>
-    </section>
-
-    <section id="conclusion">
-        <h2>Conclusion</h2>
-        <p>Linear regression is a powerful and versatile tool for modeling relationships between variables and making predictions. However, it is important to be mindful of its assumptions and limitations when applying it to real-world data.</p>
-    </section>
-</body>
+    <link rel="stylesheet" href="../../colors.css">
+    <link rel="stylesheet" href="../../styles.css">
+  </head>
+  <body class="no-js">
+    <!-- style and theme linkers -->        
+    <input type="checkbox" id="font-state" class="state-linker">
+    <input type="checkbox" id="theme-state" class="state-linker">
+    <input type="checkbox" id="style-state" class="state-linker">
+    <div id="all-view" class="article-view">
+      <header class="fixed">
+        <h1 class="title no-select">ABEL WEB</h1>
+        <div class="head-menu left no-select">
+          <a class="link entry" href="../../index.html">⌂</a>
+        </div>
+        <div class="head-menu right no-select">
+          <label for="font-state" id="font-btn" class="link entry" title="bigger font">🗚</label>
+          <label for="theme-state" id="theme-btn" class="link entry" title="toggle dark/light theme">☯</label>
+          <label for="style-state" id="style-btn" class="link entry" title="toggle style">✎</label>
+        </div>
+      </header>
+      <!-- contents -->
+      <main class="article">
+        <h1 class="section-title">Linear Regression: Predicting Relationships Between Variables</h1>
+        <div class="section-item">
+          <div class="preview red">
+            <img src="../lines.jpeg">
+          </div>
+          <div class="description">
+            <p class="author">Abel Ianovici</p>
+            <h2>Linear Regression: Predicting Relationships Between Variables</h2>
+            <p class="desc">Linear regression is a fundamental statistical technique used to model the relationship between dependent and independent variables. This research explores both simple and multiple linear regression models.</p>
+            <p><strong>Category:</strong> Statistics, Data Science, Machine Learning</p>
+            <div class="link-section">
+              <a class="link" href="./line-regression.pdf" download="lineRegression.pdf">Download Pdf</a>
+              <a class="link" href="./line-regression.tex" download="lineRegression.tex">Download LaTeX</a>
+            </div>
+          </div>
+        </div>
+        <section id="intro">
+          <h2>What is Linear Regression?</h2>
+          <p>Linear regression is a statistical method used to model the relationship between a dependent variable and one or more independent variables by fitting a linear equation to observed data. It is one of the simplest and most widely used regression techniques.</p>
+        </section>
+        <section id="simple-linear">
+          <h2>Simple Linear Regression</h2>
+          <p>Simple linear regression involves one independent variable and one dependent variable. The goal is to find the best-fit line that predicts the dependent variable from the independent variable. The equation for simple linear regression is: <code>y = mx + b</code>, where <code>m</code> is the slope and <code>b</code> is the y-intercept.</p>
+        </section>
+        <section id="multiple-linear">
+          <h2>Multiple Linear Regression</h2>
+          <p>Multiple linear regression extends simple linear regression by using more than one independent variable to predict the dependent variable. The equation for multiple linear regression is: <code>y = m1x1 + m2x2 + ... + mnxn + b</code>, where <code>m1, m2, ..., mn</code> are the coefficients for each independent variable, and <code>x1, x2, ..., xn</code> are the independent variables.</p>
+        </section>
+        <section id="applications">
+          <h2>Applications of Linear Regression</h2>
+          <p>Linear regression is used in various fields, such as economics, finance, biology, and engineering. It helps researchers and analysts understand relationships between variables, predict outcomes, and identify trends. Examples include predicting housing prices, stock market trends, and medical conditions based on factors like age, income, or temperature.</p>
+        </section>
+        <section id="limitations">
+          <h2>Limitations of Linear Regression</h2>
+          <p>While linear regression is simple and widely applicable, it has limitations. It assumes a linear relationship between the variables, which may not always hold true in real-world data. Additionally, it is sensitive to outliers, which can distort the results and reduce the model's accuracy.</p>
+        </section>
+        <section id="conclusion">
+          <h2>Conclusion</h2>
+          <p>Linear regression is a powerful and versatile tool for modeling relationships between variables and making predictions. However, it is important to be mindful of its assumptions and limitations when applying it to real-world data.</p>
+        </section>
+      </main>
+    </div>
+  </body>
+  <script>
+  document.body.classList.remove('no-js'); // Removes fallback styling 
+  document.querySelectorAll('label[for]').forEach(label => {
+    label.setAttribute("tabindex", "0");
+    label.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        const input = document.getElementById(label.getAttribute('for'));
+        input.checked = !input.checked; // Toggle input state
+        // Or trigger click: input.click();
+        toggleEntriesFocusability();
+      }
+    });
+  });
+  function toggleEntriesFocusability() {
+    const hideState = document.getElementById('hide-state').checked;
+    const entries = document.querySelectorAll('#main-menu .entry');
+    entries.forEach(entry => {
+      if (hideState) {
+        // Make entry not focusable when hideState is true
+        entry.setAttribute('tabindex', '-1');
+      } else {
+        // Restore focusability when hideState is false
+        entry.setAttribute('tabindex', '0');
+      }
+    });
+  }
+  </script>
 </html>

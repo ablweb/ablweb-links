@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Linux</title>
+    <link rel="stylesheet" href="../../colors.css">
+    <link rel="stylesheet" href="../../styles.css">
+  </head>
+  <body class="no-js">
+    <!-- style and theme linkers -->        
+    <input type="checkbox" id="font-state" class="state-linker">
+    <input type="checkbox" id="theme-state" class="state-linker">
+    <input type="checkbox" id="style-state" class="state-linker">
+    <div id="all-view" class="article-view">
+      <header class="fixed">
+        <h1 class="title no-select">ABEL WEB</h1>
+        <div class="head-menu left no-select">
+          <a class="link entry" href="../../index.html">⌂</a>
+        </div>
+        <div class="head-menu right no-select">
+          <label for="font-state" id="font-btn" class="link entry" title="bigger font">🗚</label>
+          <label for="theme-state" id="theme-btn" class="link entry" title="toggle dark/light theme">☯</label>
+          <label for="style-state" id="style-btn" class="link entry" title="toggle style">✎</label>
+        </div>
+      </header>
+      <!-- contents -->
+      <main class="article">
+        <h1 class="section-title">Title: here</h1>
+        <div class="section-item">
+          <div class="preview blue">
+            <img src="../tuxtux.webp">
+          </div>
+          <div class="description">
+            <p class="author">Author here</p>
+            <h2>Title: here</h2>
+            <p class="desc">desc here</p>
+            <p><strong>Category:</strong>...</p>
+            <div class="link-section">
+              <a class="link" href="./about-linux.pdf" download="linuxAbout.pdf">Download Pdf</a>
+              <a class="link" href="./about-linux.tex" download="linuxAbout.tex">Download LaTeX</a>
+            </div>
+          </div>
+        </div>
+        <!-- Content here -->
+      </main>
+    </div>
+  </body>
+  <script>
+  document.body.classList.remove('no-js'); // Removes fallback styling 
+  document.querySelectorAll('label[for]').forEach(label => {
+    label.setAttribute("tabindex", "0");
+    label.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        const input = document.getElementById(label.getAttribute('for'));
+        input.checked = !input.checked; // Toggle input state
+        // Or trigger click: input.click();
+        toggleEntriesFocusability();
+      }
+    });
+  });
+  function toggleEntriesFocusability() {
+    const hideState = document.getElementById('hide-state').checked;
+    const entries = document.querySelectorAll('#main-menu .entry');
+    entries.forEach(entry => {
+      if (hideState) {
+        // Make entry not focusable when hideState is true
+        entry.setAttribute('tabindex', '-1');
+      } else {
+        // Restore focusability when hideState is false
+        entry.setAttribute('tabindex', '0');
+      }
+    });
+  }
+  </script>
+</html>

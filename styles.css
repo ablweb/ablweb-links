@@ -70,7 +70,6 @@ a {
   outline-offset: 2px;
   font-weight: bolder;
   text-decoration: underline;
-  color: var(--txt_l);
 }
 input {
   outline-offset: 2px;
