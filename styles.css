@@ -523,6 +523,10 @@ body.no-js {
     top: calc(2.5vh - 0.8rem);
     right: calc(51px + 0.7rem);
   }
+  input[name="nav"]:focus ~ input[name="nav"] {
+    z-index: 8;
+    opacity: 1;
+  }
   #hide-state {
     width: 1.2rem;
     height: 1.2rem;
