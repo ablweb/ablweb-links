@@ -1,4 +1,3 @@
-// Function to set a cookie with a name, value, and expiration in days
 function setCookie(name, value, days) {
   const d = new Date();
   d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000)); // Set the expiration date
@@ -48,7 +47,7 @@ function applySavedState() {
 }
 
 // Add event listeners to save the state whenever a checkbox is changed
-document.querySelectorAll('.state-linker').forEach(item => {
+document.querySelectorAll('.pref-state').forEach(item => {
   item.addEventListener('change', saveCheckboxState);
 });
 
