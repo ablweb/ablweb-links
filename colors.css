@@ -15,12 +15,12 @@
   --fg3: #bdae93;
   --fg4: #a89984;
 
-  --txt: #e78a4e;
-  --txt_h: #e78a4e20;
-  --txt_l: #e78a4e;
+  --txt: #ffecb2;
+  --txt_h: #ffecb220;
+  --txt_l: #ffecb2;
 
   --txt_a: #333333;
-  --txt_ah: #d77b2620;
+  --txt_ah: #33333320;
   --txt_al: #333333;  
 
   --red:    #fb4934;
@@ -69,10 +69,12 @@
     --fg4: #7c6f64;
 
     --txt: #333333;
-    --txt_h: #d77b2620;
+    --txt_h: #33333320;
+    --txt_l: #333333;
 
-    --txt_a: #e78a4e;
-    --txt_ah: #e78a4e20;
+    --txt_a: #ffecb2;
+    --txt_ah: #ffecb220;
+    --txt_al: #ffecb2;
 
     --red: #fb4934;
     --green: #b8bb26;

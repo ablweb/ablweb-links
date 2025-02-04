@@ -255,7 +255,8 @@ main.article {
   overflow: scroll;
   scrollbar-width: thin;
   scrollbar-color: var(--txt) var(--txt_h);
-  transition: opacity .2s ease, visibility .2s ease;
+  transition: width .5s ease, padding .5 ease,
+    opacity .2s ease, visibility .2s ease;
 }
 
 /* section page styling */
@@ -277,22 +278,19 @@ main.article {
   align-items: center;
   justify-content: center;
   margin-bottom: auto;
+  margin-right: auto;
+  margin-left: auto;
   padding: 10px;
   border: 1px solid var(--txt);
-  background: linear-gradient(45deg, var(--bg_s), var(--txt));
 }
-.article .section-item .preview:hover img,
 #research .section-item .preview:hover img {
-  transform: scale(1.03);
-  box-shadow: -3px 3px 6px var(--black-dim);
+  transform: scale(1.05);
 }
 .article .section-item img,
 #research .section-item img {
   width: 135px;
   height: 135px;
   object-fit: cover;
-  border-radius: 10%;
-  box-shadow: -1px 1px 4px var(--black-dim);
   transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 .article .section-item .description,
@@ -328,23 +326,6 @@ main.article {
     display: none;
   }
 }
-/* color style */
-.article .section-item .preview.red,
-#research .section-item .preview.red {
-  background: linear-gradient(45deg, var(--bg_s), var(--red));
-  border-color: var(--red);
-}
-.article .section-item .preview.green,
-#research .section-item .preview.green {
-  background: linear-gradient(45deg, var(--bg_s), var(--green));
-  border-color: var(--green);
-}
-.article .section-item .preview.blue,
-#research .section-item .preview.blue {
-  background: linear-gradient(45deg, var(--bg_s), var(--blue));
-  border-color: var(--blue);
-}
-
 /* state linker */
 .state-linker {
   display: none;
@@ -402,8 +383,12 @@ main.article {
 }
 #hide-state:checked ~ #all-view>main>.section-buffer {
   width: 100vw;
-  padding: 0 10vw;
+  padding: 0 5.5vw;
   margin: 5vh 5vw;
+  transition: width .5s ease, padding .5 ease;
+}
+#hide-state:checked ~ #all-view>main>.section-buffer>.section {
+  width: 77vw;
   transition: width .5s ease, padding .5 ease;
 }
 #hide-state:checked ~ #all-view>main>aside>#main-menu {
@@ -420,7 +405,7 @@ main.article {
   transition: none !important;
 }
 #style-state:checked ~ #all-view {
-  font-family: sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
 }
 #style-state:checked ~ #all-view>main>aside>#main-menu {
   border: unset;
