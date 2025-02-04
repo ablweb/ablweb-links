@@ -111,6 +111,12 @@ footer {
 }
 
 /* text formating */
+a {
+  font-size: var(--medium);
+}
+li {
+  font-size: var(--medium);
+}
 p {
   font-size: var(--medium);
 }
@@ -436,18 +442,6 @@ main.article {
 #style-state:checked ~ #all-view>main a:hover {
   background-color: unset;
   text-decoration: underline;
-}
-/* article previenone */
-#style-state:checked ~ #all-view>main>.section-item>.preview {
-  background: linear-gradient(45deg, var(--bg_s), var(--txt));
-  border: none;
-}
-#style-state:checked ~ #all-view>main>.section-item>.preview img{
-  box-shadow: none;
-  border-radius: 0;
-}
-#style-state:checked ~ #all-view>main>.section-item>.preview:hover img {
-  transform: none;
 }
 
 /* Fallback style when js is disabled */

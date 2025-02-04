@@ -6,6 +6,7 @@
     <title>ablweb website</title>
     <link rel="stylesheet" href="colors.css">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body class="no-js">
     <!-- style and theme linkers -->        
@@ -24,9 +25,9 @@
       <header>
         <h1 class="title no-select">ABEL WEB</h1>
         <div class="head-menu right no-select">
-          <label for="font-state" id="font-btn" class="link entry" title="bigger font">aA</label>
-          <label for="theme-state" id="theme-btn" class="link entry" title="toggle dark/light theme">☯</label>
-          <label for="style-state" id="style-btn" class="link entry" title="toggle style">✎</label>
+          <label for="font-state" id="font-btn" class="link entry material-icons" title="bigger font">text_increase</label>
+          <label for="theme-state" id="theme-btn" class="link entry material-icons" title="toggle dark/light theme">contrast</label>
+          <label for="style-state" id="style-btn" class="link entry material-icons" title="toggle style">article</label>
         </div>
       </header>
       <main>
@@ -132,8 +133,8 @@
             <h2 class="section-title">Researches</h2>
             <!-- Research 1: Linux -->
             <div class="section-item">
-              <a class="preview blue" href="resources/docs/about-linux.html">
-                <img src="resources/tuxtux.webp">
+              <a class="preview blue" href="./pages/about-linux.html">
+                <img src="./resources/tuxtux.webp">
               </a>
               <div class="description">
                 <p class="author">Abel Ianovici</p>
@@ -141,16 +142,16 @@
                 <p class="desc">Linux is a family of open-source, Unix-like operating systems that have been widely used in various environments. From servers to embedded systems, Linux is known for its stability, security, and flexibility.</p>
                 <p><strong>Category:</strong> Operating Systems, Open-Source</p>
                 <div class="link-section">
-                  <a class="link" href="resources/docs/about-linux.html">Read Article</a>
-                  <a class="link" href="resources/docs/about-linux.pdf" download="linuxAbout.pdf">Download Pdf</a>
-                  <a class="link" href="resources/docs/about-linux.tex" download="linuxAbout.tex">Download LaTeX</a>
+                  <a class="link" href="./pages/about-linux.html">Read Article</a>
+                  <a class="link" href="./pages/about-linux.pdf" download="linuxAbout.pdf">Download Pdf</a>
+                  <a class="link" href="./pages/about-linux.tex" download="linuxAbout.tex">Download LaTeX</a>
                 </div>
               </div>
             </div>
             <!-- Research 2: Sound Compression -->
             <div class="section-item">
-              <a class="preview green" href="resources/docs/about-linux.html">
-                <img src="resources/waves.jpeg">
+              <a class="preview green" href="./pages/sound-comp.html">
+                <img src="./resources/waves.jpeg">
               </a>
               <div class="description">
                 <p class="author">Abel Ianovici</p>
@@ -158,16 +159,16 @@
                 <p class="desc">Sound compression techniques help reduce the size of audio files while maintaining a balance between quality and file size. This research covers both lossless and lossy compression methods.</p>
                 <p><strong>Category:</strong> Audio Processing, Compression Techniques</p>
                 <div class="link-section">
-                  <a class="link" href="resources/docs/sound-comp.html">Read Article</a>
-                  <a class="link" href="resources/docs/sound-comp.pdf" download="soundCompression.pdf">Download Pdf</a>
-                  <a class="link" href="resources/docs/sound-comp.tex" download="soundCompression.tex">Download LaTeX</a>
+                  <a class="link" href="./pages/sound-comp.html">Read Article</a>
+                  <a class="link" href="./pages/sound-comp.pdf" download="soundCompression.pdf">Download Pdf</a>
+                  <a class="link" href="./pages/sound-comp.tex" download="soundCompression.tex">Download LaTeX</a>
                 </div>
               </div>
             </div>
             <!-- Research 3: Linear Regression -->
             <div class="section-item">
-              <a class="preview red" href="resources/docs/about-linux.html">
-                <img src="resources/lines.jpeg">
+              <a class="preview red" href="./pages/line-regression.html">
+                <img src="./resources/lines.jpeg">
               </a>
               <div class="description">
                 <p class="author">Abel Ianovici</p>
@@ -175,9 +176,9 @@
                 <p class="desc">Linear regression is a fundamental statistical technique used to model the relationship between dependent and independent variables. This research explores both simple and multiple linear regression models.</p>
                 <p><strong>Category:</strong> Statistics, Data Science, Machine Learning</p>
                 <div class="link-section">
-                  <a class="link" href="resources/docs/line-regression.html">Read Article</a>
-                  <a class="link" href="resources/docs/line-regression.pdf" download="linearRegression.pdf">Download Pdf</a>
-                  <a class="link" href="resources/docs/line-regression.tex" download="linearRegression.pdf">Download LaTeX</a>
+                  <a class="link" href="./pages/line-regression.html">Read Article</a>
+                  <a class="link" href="./pages/line-regression.pdf" download="linearRegression.pdf">Download Pdf</a>
+                  <a class="link" href="./pages/line-regression.tex" download="linearRegression.pdf">Download LaTeX</a>
                 </div>
               </div>
             </div>
@@ -185,6 +186,7 @@
         </div>
       </main>
     </div>
+    <script src="./js/preferences.js"></script>
   </body>
   <script>
   document.body.classList.remove('no-js'); // Removes fallback styling 
