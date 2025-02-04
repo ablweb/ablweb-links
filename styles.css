@@ -334,6 +334,7 @@ main.article {
 }
 /* state linker */
 .state-linker {
+  display: none;
 }
 
 /* stat changes */
