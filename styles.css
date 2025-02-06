@@ -261,7 +261,7 @@ main.article {
   overflow: scroll;
   scrollbar-width: thin;
   scrollbar-color: var(--txt) var(--txt_h);
-  transition: width .5s ease, padding .5 ease,
+  transition: width .5s ease, padding .5s ease,
     opacity .2s ease, visibility .2s ease;
 }
 
