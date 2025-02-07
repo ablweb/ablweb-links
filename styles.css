@@ -261,8 +261,8 @@ main.article {
   overflow: scroll;
   scrollbar-width: thin;
   scrollbar-color: var(--txt) var(--txt_h);
-  transition: width .5s ease, padding .5s ease,
-    opacity .2s ease, visibility .2s ease;
+  transition: opacity .2s ease, visibility .2s ease,
+    width .2s ease, padding .2s ease;
 }
 
 /* section page styling */
@@ -360,7 +360,8 @@ main.article {
 #research-state:checked ~ #all-view>main>.section-buffer>#research {
   visibility: visible;
   opacity: 1;
-  transition: opacity .2s ease, visibility .2s ease;
+  transition: opacity .2s ease, visibility .2s ease,
+    width .2s ease, padding .2s ease;
 }
 #about-state:checked ~ #all-view>main>.section-buffer,
 #work-state:checked ~ #all-view>main>.section-buffer,
