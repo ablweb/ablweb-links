@@ -294,9 +294,9 @@ main.article {
   display: flex;
 }
 
-/* research page styling */
+/* work page styling */
 .article .section-item .preview, 
-#research .section-item .preview {
+#work .section-item .preview {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -306,36 +306,36 @@ main.article {
   padding: 10px;
   border: 1px solid var(--txt);
 }
-#research .section-item .preview:hover img {
+#work .section-item .preview:hover img {
   transform: scale(1.05);
 }
 .article .section-item img,
-#research .section-item img {
+#work .section-item img {
   width: 135px;
   height: 135px;
   object-fit: cover;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 .article .section-item .description,
-#research .section-item .description {
+#work .section-item .description {
   margin-left: 10px;
 }
 .article .section-item .author,
-#research .section-item .author {
+#work .section-item .author {
   font-size: var(--small);
 }
 .article .section-item .description h2,
 .article .section-item .description p,
-#research .section-item .description h2,
-#research .section-item .description p {
+#work .section-item .description h2,
+#work .section-item .description p {
   margin: 0;
 }
 .article .section-item .description .link-section,
-#research .section-item .description .link-section {
+#work .section-item .description .link-section {
   display: flex;
 }
 .article .section-item .description .link-section .link,
-#research .section-item .description .link-section .link {
+#work .section-item .description .link-section .link {
   padding: 5px 10px;
 }
 @media (max-width: 925px) {
@@ -343,10 +343,10 @@ main.article {
     flex-direction: column;
   }
   .profile .section-item .description .link-section,
-  #research .section-item .description .link-section {
+  #work .section-item .description .link-section {
     flex-direction: column;
   }
-  #research .section-item .description .desc {
+  #work .section-item .description .desc {
     display: none;
   }
 }
@@ -359,8 +359,7 @@ main.article {
 #about-state:checked ~ #all-view>main>.profile,
 #work-state:checked ~ #all-view>main>.profile,
 #contact-state:checked ~ #all-view>main>.profile,
-#resume-state:checked ~ #all-view>main>.profile,
-#research-state:checked ~ #all-view>main>.profile {
+#resume-state:checked ~ #all-view>main>.profile {
   opacity: 0;
   visibility: hidden;
   transition: opacity .2s ease, visibility .2s ease;
@@ -369,23 +368,20 @@ main.article {
 #about-state:checked ~ #all-view>main>aside>.menu>#about-btn,
 #work-state:checked ~ #all-view>main>aside>.menu>#work-btn,
 #contact-state:checked ~ #all-view>main>aside>.menu>#contact-btn,
-#resume-state:checked ~ #all-view>main>aside>.menu>#resume-btn,
-#research-state:checked ~ #all-view>main>aside>.menu>#research-btn {
+#resume-state:checked ~ #all-view>main>aside>.menu>#resume-btn {
   text-decoration: underline;
 }
 #about-state:checked ~ #all-view>main>aside,
 #work-state:checked ~ #all-view>main>aside,
 #contact-state:checked ~ #all-view>main>aside,
-#resume-state:checked ~ #all-view>main>aside,
-#research-state:checked ~ #all-view>main>aside {
+#resume-state:checked ~ #all-view>main>aside {
   width: 25vw;
   transition: width .5s ease;
 }
 #about-state:checked ~ #all-view>main>.section-buffer>#about,
 #work-state:checked ~ #all-view>main>.section-buffer>#work,
 #contact-state:checked ~ #all-view>main>.section-buffer>#contact,
-#resume-state:checked ~ #all-view>main>.section-buffer>#resume,
-#research-state:checked ~ #all-view>main>.section-buffer>#research {
+#resume-state:checked ~ #all-view>main>.section-buffer>#resume {
   visibility: visible;
   opacity: 1;
   transition: opacity .2s ease, visibility .2s ease,
@@ -394,8 +390,7 @@ main.article {
 #about-state:checked ~ #all-view>main>.section-buffer,
 #work-state:checked ~ #all-view>main>.section-buffer,
 #contact-state:checked ~ #all-view>main>.section-buffer,
-#resume-state:checked ~ #all-view>main>.section-buffer,
-#research-state:checked ~ #all-view>main>.section-buffer {
+#resume-state:checked ~ #all-view>main>.section-buffer {
   width: 69vw;
   margin: 5vh 5vw 5vh 1vw;
   transition: width .5s ease, margin .5s ease, padding .5s ease;
@@ -566,10 +561,5 @@ body.no-js {
     position: fixed;
     left: var(--menu-offset);
     top: calc(var(--menu-start) + (var(--menu-item-height) * 5));
-  }
-  #research-state {
-    position: fixed;
-    left: var(--menu-offset);
-    top: calc(var(--menu-start) + (var(--menu-item-height) * 6));
   }
 }

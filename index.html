@@ -20,7 +20,6 @@
     <input type="radio" name="nav" id="contact-state" class="state-linker">
     <input type="radio" name="nav" id="resume-state" class="state-linker">
     <input type="radio" name="nav" id="work-state" class="state-linker">
-    <input type="radio" name="nav" id="research-state" class="state-linker">
     <div id="all-view">
       <header>
         <h1 class="title no-select">ABLWEB</h1>
@@ -49,8 +48,7 @@
             <label for="contact-state" id="contact-btn" class="link entry">Contact</label>
             <label for="resume-state" id="resume-btn" class="link entry">Resume</label>
             <div class="sep"></div>
-            <label for="work-state" id="work-btn" class="link entry">Work</label>
-            <label for="research-state" id="research-btn" class="link entry">Research</label>
+            <label for="work-state" id="work-btn" class="link entry">Works</label>
           </div>
           <label for="hide-state" id="menu-btn" class="link entry aside-item no-select">></label>
         </aside>
@@ -60,7 +58,7 @@
             <h2 class="section-title">About</h2>
             <p>
               This website serves as a structured archive of work, experience, and research. It is designed to provide 
-              clear and accessible information about professional skills, completed projects, and written research. 
+              clear and accessible information about professional skills, completed projects, and written documentation. 
               Whether looking for an overview of experience, examples of past work, or ways to get in touch, all 
               relevant details are organized into dedicated sections for easy navigation.
             </p>
@@ -69,7 +67,6 @@
               <li><strong>Contact</strong> – Links to social media and additional information.</li>
               <li><strong>Resume</strong> – A detailed overview of skills and professional experience.</li>
               <li><strong>Work</strong> – A showcase of completed and ongoing projects.</li>
-              <li><strong>Research</strong> – A collection of articles and written insights.</li>
             </ul>
             <p>Designed with accessibility in mind, the site features:</p>
             <ul>
@@ -87,7 +84,7 @@
             <p>professional: ianovici.abel04@gmail.com</p>
             <h2>My links</h2>
             <ul>
-              <li>Github:<a class="link" href="https://github.com/ablweb" target="_blank">ablweb</a></li>
+              <li>Github: <a class="link" href="https://github.com/ablweb" target="_blank">ablweb</a></li>
               <div>|</div>
               <li>CodeForce: <a class="link" href="https://codeforces.com/profile/abelweb" target="_blank">abelweb</a></li>
               <div>|</div>
@@ -105,11 +102,11 @@
 
             <h2>Skills & Expertise</h2>
             <ul>
-              <li><strong>Programming Languages:</strong> Python, C, C++, Go</li>
-              <li><strong>Python Libraries:</strong> NumPy, Pandas, Scikit-learn, Matplotlib (Machine Learning & Data Processing), Pygame (Game Development & Simulations)</li>
+              <li><strong>Programming Languages:</strong> C, C++, Go, Python</li>
               <li><strong>C:</strong> Functional Programming</li>
               <li><strong>C++:</strong> Object-Oriented Programming (OOP)</li>
               <li><strong>Go:</strong> Web Scraping with Colly</li>
+              <li><strong>Python Libraries:</strong> NumPy, Pandas, Scikit-learn, Matplotlib (Machine Learning & Data Processing), Pygame (Simulations & Game Development)</li>
               <li><strong>OOP & System Modeling:</strong> UML & SRD modeling using StarUML</li>
             </ul>
 
@@ -123,7 +120,7 @@
 
             <h2>Web Development</h2>
             <ul>
-              <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+              <li><strong>Frontend:</strong> HTML/CSS, JavaScript, React</li>
               <li><strong>Backend:</strong> Strong programming fundamentals with the ability to quickly adapt to backend development, databases, and server-side technologies</li>
             </ul>
 
@@ -135,58 +132,38 @@
           </div>
           <div id="work" class="section">
             <h2 class="section-title">Works</h2>
-            <p>sorry working here</p>
-          </div>
-          <div id="research" class="section">
-            <h2 class="section-title">Researches</h2>
-            <!-- Research 1: Linux -->
-            <div class="section-item">
-              <a class="preview" href="./pages/about-linux.html">
-                <img src="./resources/tuxtux.webp">
-              </a>
-              <div class="description">
-                <p class="author">Abel Ianovici</p>
-                <h2>Linux: An Open-Source Operating System</h2>
-                <p class="desc">Linux is a family of open-source, Unix-like operating systems that have been widely used in various environments. From servers to embedded systems, Linux is known for its stability, security, and flexibility.</p>
-                <p><strong>Category:</strong> Operating Systems, Open-Source</p>
-                <div class="link-section">
-                  <a class="link" href="./pages/about-linux.html">Read Article</a>
-                  <a class="link" href="./pages/about-linux.pdf" download="linuxAbout.pdf">Download Pdf</a>
-                  <a class="link" href="./pages/about-linux.tex" download="linuxAbout.tex">Download LaTeX</a>
-                </div>
-              </div>
-            </div>
-            <!-- Research 2: Sound Compression -->
-            <div class="section-item">
-              <a class="preview" href="./pages/sound-comp.html">
-                <img src="./resources/waves.jpeg">
-              </a>
-              <div class="description">
-                <p class="author">Abel Ianovici</p>
-                <h2>Sound Compression: Reducing Audio File Sizes</h2>
-                <p class="desc">Sound compression techniques help reduce the size of audio files while maintaining a balance between quality and file size. This research covers both lossless and lossy compression methods.</p>
-                <p><strong>Category:</strong> Audio Processing, Compression Techniques</p>
-                <div class="link-section">
-                  <a class="link" href="./pages/sound-comp.html">Read Article</a>
-                  <a class="link" href="./pages/sound-comp.pdf" download="soundCompression.pdf">Download Pdf</a>
-                  <a class="link" href="./pages/sound-comp.tex" download="soundCompression.tex">Download LaTeX</a>
-                </div>
-              </div>
-            </div>
-            <!-- Research 3: Linear Regression -->
+            <!-- Work : Linear Regression -->
             <div class="section-item">
               <a class="preview" href="./pages/line-regression.html">
                 <img src="./resources/lines.jpeg">
               </a>
               <div class="description">
                 <p class="author">Abel Ianovici</p>
-                <h2>Linear Regression: Predicting Relationships Between Variables</h2>
-                <p class="desc">Linear regression is a fundamental statistical technique used to model the relationship between dependent and independent variables. This research explores both simple and multiple linear regression models.</p>
+                <h2>Machine learning: Simple ML Models</h2>
+                <p class="desc">A repository and article exploring simple ML models, their concepts, implementations, and practical applications.</p>
                 <p><strong>Category:</strong> Statistics, Data Science, Machine Learning</p>
                 <div class="link-section">
+                  <a class="link" href="https://github.com/ablweb/simpleMachineLearning">Github</a>
                   <a class="link" href="./pages/line-regression.html">Read Article</a>
                   <a class="link" href="./pages/line-regression.pdf" download="linearRegression.pdf">Download Pdf</a>
                   <a class="link" href="./pages/line-regression.tex" download="linearRegression.pdf">Download LaTeX</a>
+                </div>
+              </div>
+            </div>
+            <!-- Work : Sound Compression -->
+            <div class="section-item">
+              <a class="preview" href="./pages/sound-comp.html">
+                <img src="./resources/waves.jpeg">
+              </a>
+              <div class="description">
+                <p class="author">Abel Ianovici</p>
+                <h2>Sound Compression: Reducing Audio File Sizes Using Math</h2>
+                <p class="desc">Sound compression techniques help reduce the size of audio files while maintaining a balance between quality and file size. This research covers both lossless and lossy compression methods.</p>
+                <p><strong>Category:</strong> Audio Processing, Compression Techniques</p>
+                <div class="link-section">
+                  <a class="link" href="./pages/sound-comp.html">Read Article</a>
+                  <a class="link" href="./pages/sound-comp.pdf" download="soundCompression.pdf">Download Pdf</a>
+                  <a class="link" href="./pages/sound-comp.tex" download="soundCompression.tex">Download LaTeX</a>
                 </div>
               </div>
             </div>
