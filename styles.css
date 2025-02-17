@@ -330,10 +330,12 @@ main.article {
 #work .section-item .description p {
   margin: 0;
 }
+.profile .link-section,
 .article .section-item .description .link-section,
 #work .section-item .description .link-section {
   display: flex;
 }
+.profile .link-section .link,
 .article .section-item .description .link-section .link,
 #work .section-item .description .link-section .link {
   padding: 5px 10px;
@@ -342,7 +344,6 @@ main.article {
   .section-item {
     flex-direction: column;
   }
-  .profile .section-item .description .link-section,
   #work .section-item .description .link-section {
     flex-direction: column;
   }
