@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABLWEB</title>
     <link rel="stylesheet" href="colors.css">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  </head>
-  <body class="no-js">
-    <!-- style and theme linkers -->        
+</head>
+
+<body class="no-js">
+    <!-- style and theme linkers -->
     <input type="checkbox" id="font-state" class="state-linker pref-state">
     <input type="checkbox" id="theme-state" class="state-linker pref-state">
     <input type="checkbox" id="style-state" class="state-linker pref-state">
@@ -21,159 +23,186 @@
     <input type="radio" name="nav" id="resume-state" class="state-linker">
     <input type="radio" name="nav" id="work-state" class="state-linker">
     <div id="all-view">
-      <header>
-        <h1 class="title no-select">ABLWEB</h1>
-        <div class="head-menu right no-select">
-          <label for="font-state" id="font-btn" class="link entry material-icons" title="bigger font">text_increase</label>
-          <label for="theme-state" id="theme-btn" class="link entry material-icons" title="toggle dark/light theme">contrast</label>
-          <label for="style-state" id="style-btn" class="link entry material-icons" title="toggle style">article</label>
-        </div>
-      </header>
-      <main>
-        <div class="profile">
-          <h1 class="section-title">Abel Ianovici</h1>
-          <p class="desc">Developer | C/C++ & Go</p>
-          <div class="link-section">
-            <a class="link" href="https://github.com/ablweb">Github</a>
-            <a class="link" href="https://www.linkedin.com/in/abel-ianovici-228018318/">Linkedin</a>
-          </div>
-        </div>
-        <!-- menu -->
-        <aside>
-          <div id="main-menu" class="menu aside-item">
-            <label for="hide-state" id="hide-btn" class="link entry">Hide Menu</label>
-            <label for="focus-state" id="focus-btn" class="link entry">Focus Menu</label>
-            <div class="sep"></div>
-            <label for="about-state" id="about-btn" class="link entry">About</label>
-            <label for="contact-state" id="contact-btn" class="link entry">Contact</label>
-            <label for="resume-state" id="resume-btn" class="link entry">Resume</label>
-            <div class="sep"></div>
-            <label for="work-state" id="work-btn" class="link entry">Works</label>
-          </div>
-          <label for="hide-state" id="menu-btn" class="link entry aside-item no-select">></label>
-        </aside>
-        <!-- contents -->
-        <div class="section-buffer">
-          <div id="about" class="section">
-            <h2 class="section-title">About</h2>
-            <p>
-              This website serves as a structured archive of work, experience, and research. It is designed to provide 
-              clear and accessible information about professional skills, completed projects, and written documentation. 
-              Whether looking for an overview of experience, examples of past work, or ways to get in touch, all 
-              relevant details are organized into dedicated sections for easy navigation.
-            </p>
-            <p>It provides:</p>
-            <ul>
-              <li><strong>Contact</strong> – Links to social media and additional information.</li>
-              <li><strong>Resume</strong> – A detailed overview of skills and professional experience.</li>
-              <li><strong>Work</strong> – A showcase of completed and ongoing projects.</li>
-            </ul>
-            <p>Designed with accessibility in mind, the site features:</p>
-            <ul>
-              <li>A clean, minimal layout with simple on-page navigation.</li>
-              <li>Options to adjust font size and toggle between dark and light themes.</li>
-              <li>The ability to disable non-essential styles for a plain-text experience.</li>
-              <li>Full functionality without JavaScript, ensuring smooth performance.</li>
-              <li>Optimized keyboard navigation for ease of use.</li>
-            </ul>
-            <p>Explore the sections for detailed information.</p>
-          </div>
-          <div id="contact" class="section">
-            <h2 class="section-title">Contact</h2>
-            <h2>Emails</h2>
-            <p>professional: ianovici.abel04@gmail.com</p>
-            <h2>My links</h2>
-            <ul>
-              <li>Github: <a class="link" href="https://github.com/ablweb" target="_blank">ablweb</a></li>
-              <div>|</div>
-              <li>CodeForce: <a class="link" href="https://codeforces.com/profile/abelweb" target="_blank">abelweb</a></li>
-              <div>|</div>
-              <li>LeetCode: <a class="link" href="https://leetcode.com/u/aian0004/" target="_blank">aian0004</a></li>
-              <div>|</div>
-              <li>Linkedin: <a class="link" href="https://www.linkedin.com/in/abel-ianovici-228018318/" target="_blank">Abel Ianovici</a></li>
-              <div>|</div>
-              <li>X: <a class="link" href="https://x.com/aian0004" target="_blank">aian0004</a></li>
-              <div>|</div>
-              <li>Discord: pokeyoshi_</li>
-            </ul>
-          </div>
-          <div id="resume" class="section">
-            <h2 class="section-title">Resume</h2>
-
-            <h2>Skills & Expertise</h2>
-            <ul>
-              <li><strong>Programming Languages:</strong> C, C++, Go, Python</li>
-              <li><strong>C:</strong> Functional Programming</li>
-              <li><strong>C++:</strong> Object-Oriented Programming (OOP)</li>
-              <li><strong>Go:</strong> Web Scraping with Colly</li>
-              <li><strong>Python Libraries:</strong> NumPy, Pandas, Scikit-learn, Matplotlib (Machine Learning & Data Processing), Pygame (Simulations & Game Development)</li>
-              <li><strong>OOP & System Modeling:</strong> UML & SRD modeling using StarUML</li>
-            </ul>
-
-            <h2>Development & Tools</h2>
-            <ul>
-              <li><strong>Linux Proficiency:</strong> Strong understanding of Linux systems (Debian, Arch, Fedora), terminal usage, and system administration</li>
-              <li><strong>Version Control & Documentation:</strong> Git, LaTeX</li>
-              <li><strong>Office & Productivity Tools:</strong> Microsoft Office Suite (Excel, Word, PowerPoint)</li>
-              <li><strong>Design Tools:</strong> Figma, Krita</li>
-            </ul>
-
-            <h2>Web Development</h2>
-            <ul>
-              <li><strong>Frontend:</strong> HTML/CSS, JavaScript, React</li>
-              <li><strong>Backend:</strong> Strong programming fundamentals with the ability to quickly adapt to backend development, databases, and server-side technologies</li>
-            </ul>
-
-            <h2>Machine Learning & Data Science</h2>
-            <ul>
-              <li><strong>Basic Knowledge:</strong> Understanding of ML models, training techniques, and data preprocessing</li>
-            </ul>
-            </section>
-          </div>
-          <div id="work" class="section">
-            <h2 class="section-title">Works</h2>
-            <!-- Work : Linear Regression -->
-            <div class="section-item">
-              <a class="preview" href="./pages/line-regression.html">
-                <img src="./resources/lines.jpeg">
-              </a>
-              <div class="description">
-                <p class="author">Abel Ianovici</p>
-                <h2>Machine learning: Simple ML Models</h2>
-                <p class="desc">A repository and article exploring simple ML models, their concepts, implementations, and practical applications.</p>
-                <p><strong>Category:</strong> Statistics, Data Science, Machine Learning</p>
-                <div class="link-section">
-                  <a class="link" href="https://github.com/ablweb/simpleMachineLearning">Github Page</a>
-                  <a class="link" href="./pages/line-regression.html">Read Article</a>
-                  <a class="link" href="./pages/line-regression.pdf" download="linearRegression.pdf">Download Pdf</a>
-                  <a class="link" href="./pages/line-regression.tex" download="linearRegression.pdf">Download LaTeX</a>
-                </div>
-              </div>
+        <header>
+            <h1 class="title no-select">ABLWEB</h1>
+            <div class="head-menu right no-select">
+                <label for="font-state" id="font-btn" class="link entry material-icons"
+                    title="bigger font">text_increase</label>
+                <label for="theme-state" id="theme-btn" class="link entry material-icons"
+                    title="toggle dark/light theme">contrast</label>
+                <label for="style-state" id="style-btn" class="link entry material-icons"
+                    title="toggle style">article</label>
             </div>
-            <!-- Work : Sound Compression -->
-            <div class="section-item">
-              <a class="preview" href="./pages/sound-comp.html">
-                <img src="./resources/waves.jpeg">
-              </a>
-              <div class="description">
-                <p class="author">Abel Ianovici</p>
-                <h2>Sound Compression: Reducing Audio File Sizes Using Math</h2>
-                <p class="desc">Sound compression techniques help reduce the size of audio files while maintaining a balance between quality and file size. This research covers both lossless and lossy compression methods.</p>
-                <p><strong>Category:</strong> Audio Processing, Compression Techniques</p>
+        </header>
+        <main>
+            <div class="profile">
+                <h1 class="section-title">Abel Ianovici</h1>
+                <p>Developer | C/C++, python & Go</p>
                 <div class="link-section">
-                  <a class="link" href="https://github.com/ablweb/SinCompression">Github Page</a>
-                  <a class="link" href="./pages/sound-comp.html">Read Article</a>
-                  <a class="link" href="./pages/sound-comp.pdf" download="soundCompression.pdf">Download Pdf</a>
-                  <a class="link" href="./pages/sound-comp.tex" download="soundCompression.tex">Download LaTeX</a>
+                    <a class="link" href="https://github.com/ablweb">Github</a>
+                    <a class="link" href="https://www.linkedin.com/in/abel-ianovici-228018318/">Linkedin</a>
                 </div>
-              </div>
+                <div class="desc">
+                    <p><b><u>Experience:</u></b><br>Academic projects app development</p>
+                    <p><b><u>Tech Stack:</u></b><br>- C/C++, python & Go<br>- Linux system</p>
+                    <p><b><u>Languages:</u></b><br>- English<br>- French<br>- Romanian</p>
+                </div>
             </div>
-          </div>
-        </div>
-      </main>
+            <!-- menu -->
+            <aside>
+                <div id="main-menu" class="menu aside-item">
+                    <label for="hide-state" id="hide-btn" class="link entry">Hide Menu</label>
+                    <label for="focus-state" id="focus-btn" class="link entry">Focus Menu</label>
+                    <div class="sep"></div>
+                    <label for="about-state" id="about-btn" class="link entry">About</label>
+                    <label for="contact-state" id="contact-btn" class="link entry">Contact</label>
+                    <label for="resume-state" id="resume-btn" class="link entry">Resume</label>
+                    <div class="sep"></div>
+                    <label for="work-state" id="work-btn" class="link entry">Works</label>
+                </div>
+                <label for="hide-state" id="menu-btn" class="link entry aside-item no-select">></label>
+            </aside>
+            <!-- contents -->
+            <div class="section-buffer">
+                <div id="about" class="section">
+                    <h2 class="section-title">About</h2>
+                    <p>
+                        This website serves as a structured archive of work, experience, and research. It is designed to
+                        provide
+                        clear and accessible information about professional skills, completed projects, and written
+                        documentation.
+                        Whether looking for an overview of experience, examples of past work, or ways to get in touch,
+                        all
+                        relevant details are organized into dedicated sections for easy navigation.
+                    </p>
+                    <p>It provides:</p>
+                    <ul>
+                        <li><strong>Contact</strong> – Links to social media and additional information.</li>
+                        <li><strong>Resume</strong> – A detailed overview of skills and professional experience.</li>
+                        <li><strong>Work</strong> – A showcase of completed and ongoing projects.</li>
+                    </ul>
+                    <p>Designed with accessibility in mind, the site features:</p>
+                    <ul>
+                        <li>A clean, minimal layout with simple on-page navigation.</li>
+                        <li>Options to adjust font size and toggle between dark and light themes.</li>
+                        <li>The ability to disable non-essential styles for a plain-text experience.</li>
+                        <li>Full functionality without JavaScript, ensuring smooth performance.</li>
+                        <li>Optimized keyboard navigation for ease of use.</li>
+                    </ul>
+                    <p>Explore the sections for detailed information.</p>
+                </div>
+                <div id="contact" class="section">
+                    <h2 class="section-title">Contact</h2>
+                    <h2>Emails</h2>
+                    <p>professional: ianovici.abel04@gmail.com</p>
+                    <h2>My links</h2>
+                    <ul>
+                        <li>Github: <a class="link" href="https://github.com/ablweb" target="_blank">ablweb</a></li>
+                        <div>|</div>
+                        <li>CodeForce: <a class="link" href="https://codeforces.com/profile/abelweb"
+                                target="_blank">abelweb</a></li>
+                        <div>|</div>
+                        <li>LeetCode: <a class="link" href="https://leetcode.com/u/aian0004/"
+                                target="_blank">aian0004</a></li>
+                        <div>|</div>
+                        <li>Linkedin: <a class="link" href="https://www.linkedin.com/in/abel-ianovici-228018318/"
+                                target="_blank">Abel Ianovici</a></li>
+                        <div>|</div>
+                        <li>X: <a class="link" href="https://x.com/aian0004" target="_blank">aian0004</a></li>
+                        <div>|</div>
+                        <li>Discord: pokeyoshi_</li>
+                    </ul>
+                </div>
+                <div id="resume" class="section">
+                    <h2 class="section-title">Resume</h2>
+
+                    <h2>Skills & Expertise</h2>
+                    <ul>
+                        <li><strong>Programming Languages:</strong> C, C++, Go, Python</li>
+                        <li><strong>C:</strong> Functional Programming</li>
+                        <li><strong>C++:</strong> Object-Oriented Programming (OOP)</li>
+                        <li><strong>Go:</strong> Web Scraping with Colly</li>
+                        <li><strong>Python Libraries:</strong> NumPy, Pandas, Scikit-learn, Matplotlib (Machine Learning
+                            & Data Processing), Pygame (Simulations & Game Development)</li>
+                        <li><strong>OOP & System Modeling:</strong> UML & SRD modeling using StarUML</li>
+                    </ul>
+
+                    <h2>Development & Tools</h2>
+                    <ul>
+                        <li><strong>Linux Proficiency:</strong> Strong understanding of Linux systems (Debian, Arch,
+                            Fedora), terminal usage, and system administration</li>
+                        <li><strong>Version Control & Documentation:</strong> Git, LaTeX</li>
+                        <li><strong>Office & Productivity Tools:</strong> Microsoft Office Suite (Excel, Word,
+                            PowerPoint)</li>
+                        <li><strong>Design Tools:</strong> Figma, Krita</li>
+                    </ul>
+
+                    <h2>Web Development</h2>
+                    <ul>
+                        <li><strong>Frontend:</strong> HTML/CSS, JavaScript, React</li>
+                        <li><strong>Backend:</strong> Strong programming fundamentals with the ability to quickly adapt
+                            to backend development, databases, and server-side technologies</li>
+                    </ul>
+
+                    <h2>Machine Learning & Data Science</h2>
+                    <ul>
+                        <li><strong>Basic Knowledge:</strong> Understanding of ML models, training techniques, and data
+                            preprocessing</li>
+                    </ul>
+                    </section>
+                </div>
+                <div id="work" class="section">
+                    <h2 class="section-title">Works</h2>
+                    <!-- Work : Linear Regression -->
+                    <div class="section-item">
+                        <a class="preview" href="./pages/line-regression.html">
+                            <img src="./resources/lines.jpeg">
+                        </a>
+                        <div class="description">
+                            <p class="author">Abel Ianovici</p>
+                            <h2>Machine learning: Simple ML Models</h2>
+                            <p class="desc">A repository and article exploring simple ML models, their concepts,
+                                implementations, and practical applications.</p>
+                            <p><strong>Category:</strong> Statistics, Data Science, Machine Learning</p>
+                            <div class="link-section">
+                                <a class="link" href="https://github.com/ablweb/simpleMachineLearning">Github Page</a>
+                                <a class="link" href="./pages/line-regression.html">Read Article</a>
+                                <a class="link" href="./pages/line-regression.pdf"
+                                    download="linearRegression.pdf">Download Pdf</a>
+                                <a class="link" href="./pages/line-regression.tex"
+                                    download="linearRegression.pdf">Download LaTeX</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Work : Sound Compression -->
+                    <div class="section-item">
+                        <a class="preview" href="./pages/sound-comp.html">
+                            <img src="./resources/waves.jpeg">
+                        </a>
+                        <div class="description">
+                            <p class="author">Abel Ianovici</p>
+                            <h2>Sound Compression: Reducing Audio File Sizes Using Math</h2>
+                            <p class="desc">Sound compression techniques help reduce the size of audio files while
+                                maintaining a balance between quality and file size. This research covers both lossless
+                                and lossy compression methods.</p>
+                            <p><strong>Category:</strong> Audio Processing, Compression Techniques</p>
+                            <div class="link-section">
+                                <a class="link" href="https://github.com/ablweb/SinCompression">Github Page</a>
+                                <a class="link" href="./pages/sound-comp.html">Read Article</a>
+                                <a class="link" href="./pages/sound-comp.pdf" download="soundCompression.pdf">Download
+                                    Pdf</a>
+                                <a class="link" href="./pages/sound-comp.tex" download="soundCompression.tex">Download
+                                    LaTeX</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
     <script src="./js/base.js"></script>
     <script src="./js/preferences.js"></script>
     <script src="./js/key-nav.js"></script>
-  </body>
+</body>
+
 </html>
