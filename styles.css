@@ -213,24 +213,13 @@ header .entry {
     width: 100%;
     top: 8vh;
     transition: opacity .2s ease, visibily .2s ease;
+    text-align: center;
 }
 
 .profile p,
 .profile h1 {
     margin-top: 10px;
     margin-bottom: 10px;
-}
-
-.profile .desc {
-    display: flex;
-    flex-direction: row;
-    gap: 5vw;
-}
-
-.profile .desc>* {
-    width: 100%;
-    text-align: center;
-    box-sizing: border-box;
 }
 
 /* Menu style */
