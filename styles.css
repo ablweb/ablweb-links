@@ -346,8 +346,6 @@ main.article {
     align-items: center;
     justify-content: center;
     margin-bottom: auto;
-    margin-right: auto;
-    margin-left: auto;
     padding: 10px;
     border: 1px solid var(--txt);
 }
@@ -396,6 +394,12 @@ main.article {
 @media (max-width: 925px) {
     .section-item {
         flex-direction: column;
+    }
+
+    .article .section-item .preview,
+    #work .section-item .preview {
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #work .section-item .description .link-section {
