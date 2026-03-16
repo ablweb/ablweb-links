@@ -40,9 +40,10 @@
                     Contact
                 </a>
                 <div class="resume-dropdown">
-                    <a href="#">
+                    <input type="checkbox" id="resume-toggle" hidden>
+                    <label for="resume-toggle">
                         <i class="fa-solid fa-file-lines"></i> Resume
-                    </a>
+                    </label>
                     <div class="resume-options">
                         <a href="./res/resume-en.pdf" download="AbelIanovici_resume_en.pdf">English</a>
                         <a href="./res/resume-fr.pdf" download="AbelIanovici_resume_fr.pdf">French</a>
@@ -125,6 +126,27 @@
         <section id="work">
             <h2>works</h2>
             <div class="projects-grid">
+
+                <div class="project-card repo">
+                    <a href="https://nihilsinechristo.com/" target="_blank">
+                        <img src="res/anw.png" alt="Project image">
+                        <h3>Static Website for Christian Camp</h3>
+                        <p>Static website built with Hugo for a Christian camp in Romania, including a CMS for fast content editing and updates.</p>
+                        <p>Maintained, deployed with Netlify</p>
+                        <div class="categories">Web, Hugo, CMS, netlify</div>
+                    </a>
+                </div>
+
+                <div class="project-card repo">
+                    <a href="https://angelica-ianovici.vercel.app" target="_blank">
+                        <img src="res/archi.png" alt="Project image">
+                        <h3>Architecture Portfolio Website</h3>
+                        <p>Minimal static portfolio website showcasing architectural projects and visual work. Designed for clean presentation and fast loading.</p>
+                        <p>Client project, deployed on Vercel</p>
+                        <div class="categories">Web, static, vercel</div>
+                    </a>
+                </div>
+
                 <div class="project-card repo">
                     <a href="https://github.com/ablweb/GoScrapr" target="_blank">
                         <img src="res/ocean.png" alt="Project image">
