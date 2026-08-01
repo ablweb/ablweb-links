@@ -10,8 +10,11 @@
 </head>
 
 <body class="no-js">
+    <a href="#top" id="top-btn">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
     <div class="content">
-        <header>
+        <header id="top">
             <div class="profile">
                 <div class="pic">
                     <img src="res/Wladyslaw_Podkowinski-Sad_w_chrzesnem.jpg" alt="">
@@ -20,10 +23,25 @@
                     <h1>Abel Ianovici</h1>
                     <p>
                         Software Developer<br>
-                        Systems · Automation · Linux<br>
                         <br>
                         "The simple way is always the right way."
                     </p>
+                </div>
+                <div class="skill-grid">
+                    <div class="row">
+                        <div class="item bg-red">Linux</div>
+                        <div class="item bg-blue">Embedded systems</div>
+                        <div class="item bg-green">C++ Dev</div>
+                    </div>
+                    <div class="row">
+                        <div class="item bg-magenta">Web App</div>
+                        <div class="item bg-yellow">Backend Dev</div>
+                        <div class="item bg-red">Automation</div>
+                    </div>
+                    <div class="row">
+                        <div class="item bg-green">Low-Level</div>
+                        <div class="item bg-blue">AI</div>
+                    </div>
                 </div>
             </div>
             <nav>
@@ -67,7 +85,7 @@
                 <h2>Skills</h2>
                 <div class="row">
                     <div>
-                        <h3>Languages</h3>
+                        <h3>Prog. Languages</h3>
                         <ul>
                             <li>C</li>
                             <li>C++</li>
@@ -87,8 +105,16 @@
                     <div>
                         <h3>Operating Systems</h3>
                         <ul>
-                            <li>Linux (Debian, Fedora, Arch)</li>
+                            <li>Linux</li>
                             <li>Windows 10/11</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Embedded systems</h3>
+                        <ul>
+                            <li>ESP32</li>
+                            <li>I2C</li>
+                            <li>PWM</li>
                         </ul>
                     </div>
                 </div>
@@ -112,7 +138,7 @@
                         </ul>
                     </div>
                     <div>
-                        <h3>Libraries</h3>
+                        <h3>Py Libraries</h3>
                         <ul>
                             <li>PyTorch</li>
                             <li>NumPy</li>
@@ -120,18 +146,29 @@
                             <li>Scikit-learn</li>
                         </ul>
                     </div>
+                    <div>
+                        <h3>Languages</h3>
+                        <ul>
+                            <li>English</li>
+                            <li>French</li>
+                            <li>Romanian</li>
+                            <li>Dutch</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
         <section id="work">
             <h2>works</h2>
+            <input type="checkbox" id="show-more" hidden>
             <div class="projects-grid">
 
                 <div class="project-card repo">
                     <a href="https://nihilsinechristo.com/" target="_blank">
                         <img src="res/anw.png" alt="Project image">
-                        <h3>Static Website for Christian Camp</h3>
-                        <p>Static website built with Hugo for a Christian camp in Romania, including a CMS for fast content editing and updates.</p>
+                        <h3>Static Website for Summer Camp</h3>
+                        <p>Static website built with Hugo for a Christian summer camp in Romania, including a CMS for
+                            fast content editing and updates.</p>
                         <p>Maintained, deployed with Netlify</p>
                         <div class="categories">Web, Hugo, CMS, netlify</div>
                     </a>
@@ -141,7 +178,8 @@
                     <a href="https://angelica-ianovici.vercel.app" target="_blank">
                         <img src="res/archi.png" alt="Project image">
                         <h3>Architecture Portfolio Website</h3>
-                        <p>Minimal static portfolio website showcasing architectural projects and visual work. Designed for clean presentation and fast loading.</p>
+                        <p>Minimal static portfolio website showcasing architectural projects and visual work. Designed
+                            for clean presentation and fast loading.</p>
                         <p>Client project, deployed on Vercel</p>
                         <div class="categories">Web, static, vercel</div>
                     </a>
@@ -205,31 +243,29 @@
                     <p>Academic Project (3 members)</p>
                     <div class="categories">C, Server</div>
                 </div>
-
-                <div class="project-card">
-                    <img src="res/lockedIn.jpg" alt="Project image">
-                </div>
             </div>
+            <label for="show-more" class="show-more-btn">
+                <span class="more">Show more</span>
+                <span class="less">Show less</span>
+            </label>
         </section>
-        <section id="contact">
+        <footer id="contact">
             <h2>contact</h2>
             <p>ianovici.abel04@gmail.com</p>
             <ul>
-                <a href="https://github.com/ablweb" target="_blank">
+                <a class="external-link" href="https://github.com/ablweb" target="_blank">
                     <i class="fa-brands fa-square-github"></i>
                     Github
                 </a>
-                <a href="https://www.linkedin.com/in/abel-ianovici" target="_blank">
+                <a class="external-link" href="https://www.linkedin.com/in/abel-ianovici" target="_blank">
                     <i class="fa-brands fa-linkedin"></i>
                     Linkedin
                 </a>
-                <a href="https://codeforces.com/profile/abelweb" target="_blank">
+                <a class="external-link" href="https://codeforces.com/profile/abelweb" target="_blank">
                     <i class="fa-brands fa-linkedin"></i>
-                    CodeForces
+                    <span>CodeForces</span>
                 </a>
             </ul>
-        </section>
-        <footer>
         </footer>
     </div>
     <script src="./js/base.js"></script>
